@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P₃ Lending</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:700,800&display=swap" rel="stylesheet">
+  <style>
+    /* --- General Body & Background Styles --- */
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .stars {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #000;
+      z-index: -1;
+    }
+    main {
+      flex-grow: 1;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+    /* --- Logo Styles --- */
+    .p3-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+    .p3-logo-symbol {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      font-size: 5rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+    }
+    .p3-bracket-left {
+      color: #FF5B7A;
+      font-size: 5rem;
+      font-weight: 700;
+      margin-right: 0.2em;
+    }
+    .p3-main {
+      color: #2DE0E6;
+      font-size: 4rem;
+      font-weight: 800;
+      position: relative;
+      margin: 0 0.2em;
+    }
+    .p3-sub {
+      color: #FF9900;
+      font-size: 2rem;
+      font-weight: 700;
+      position: absolute;
+      right: -1.3em;
+      bottom: 0.2em;
+      font-family: 'Inter', sans-serif;
+    }
+    .p3-bracket-right {
+      color: #2DE0E6;
+      font-size: 5rem;
+      font-weight: 700;
+      margin-left: 0.2em;
+    }
+    .p3-lending {
+      color: #FF9900;
+      font-size: 2.7rem;
+      font-weight: 800;
+      margin-top: 0.7em;
+      letter-spacing: 0.04em;
+      font-family: 'Inter', monospace, sans-serif;
+    }
+    @media (max-width: 600px) {
+      .p3-logo-symbol {
+        font-size: 2.5rem;
+      }
+      .p3-bracket-left,
+      .p3-bracket-right {
+        font-size: 2.5rem;
+      }
+      .p3-main {
+        font-size: 2rem;
+      }
+      .p3-sub {
+        font-size: 1rem;
+        right: -0.7em;
+        bottom: 0.1em;
+      }
+      .p3-lending {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <main>
+    <div class="container">
+      <div class="p3-logo">
+        <div class="p3-logo-symbol">
+          <span class="p3-bracket-left">(</span>
+          <span class="p3-main">
+            P
+            <span class="p3-sub">3</span>
+          </span>
+          <span class="p3-bracket-right">)</span>
+        </div>
+        <div class="p3-lending">Lending</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
